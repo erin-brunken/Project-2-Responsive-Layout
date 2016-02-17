@@ -1,0 +1,237 @@
+/*NORMALISE CSS
+------------------------------------*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol,
+li,
+a,
+div {
+	margin: 0;
+	padding: 0;
+}
+
+/*UNIVERSAL STYLING
+-------------------------------------*/
+* {
+	box-sizing: border-box;
+}
+
+/*GENERAL STYLING
+-------------------------------------*/
+
+li {
+	list-style: none;
+	margin: 1em 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: red;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	font-family: 'Raleway', sans-serif;
+	color: #6a6a6a;
+}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+	text-align:center;
+	padding-top:1em;
+	background: #fafafa;
+}
+
+h3 {
+	line-height: 1.5;
+}
+
+img {
+	width: 100%;	
+}
+
+/*LAYOUT STYLING
+-----------------------------------------*/
+
+.item {
+	margin: 0.5em 0.3em;
+}
+
+.menu li {
+	background: #fff;
+}
+
+.student-name {
+	margin-bottom: 2em;
+}
+
+.profile-image {
+	margin-bottom: 2em;
+}
+
+.text {
+	margin: 2em 0;
+	line-height: 1.5;
+}
+
+.text p {
+	margin-top: 1em;
+}
+
+.portfolio {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.contact-text {
+	margin-top: 2em;
+	line-height: 2;
+	padding: 0 2em;
+}
+
+.contact {
+	margin-top: 4em;
+	margin-bottom:2em;
+	background: #fafafa;
+	padding-bottom: 2em;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 1em 2em 1em;
+	font-size: 12px;
+	border-top: 1px solid #6a6a6a;
+	padding-top: 2em;
+}
+
+.bottom-menu {
+	display: none;
+}
+
+/*MEDIA QUERIES
+-----------------------------------------*/
+
+@media (min-width: 768px) {
+	
+	.main-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 3em;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin: 0 2em;
+	}
+
+	.flex-section{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.profile {
+		display: flex;
+		margin: 1em;
+		padding: 0.5em;
+		background: #fafafa;
+	}
+
+	.profile-text {
+		text-align: left;
+	}
+	
+	.profile-image {
+		order: +1;
+		margin-left: 1em;
+		width: 150%;
+	}
+	
+	.item {
+		flex: 1 0 280px;
+		margin: 0.5em 1em;
+	}
+
+	.hello {
+		margin-bottom: 1em;
+	}
+
+	.name {
+		margin-left: 1em;
+	}
+
+	.bottom-menu {
+		display: inline-block;
+	}
+
+
+	.bottom-menu li {
+		float: left;
+		margin: 0 1em 0 2em;
+	}
+
+	.back-to-top {
+		display: none;
+	}
+	
+}
+
+
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	.main-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-left: 2em;
+		margin-top: 3em;
+		margin-bottom: 2em;
+	}
+	
+	.content {
+		border-bottom: none;
+	}
+
+	.profile {
+		display: flex;
+	}
+
+	.profile-image  {
+		width: 150%;
+		margin-left: 2em;
+	}
+
+	footer {
+		width: 90%;
+		margin: 0 auto;
+		padding-bottom: 1em;
+	}
+}
